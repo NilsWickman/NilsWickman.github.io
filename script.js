@@ -31,7 +31,7 @@ let paddleSpeed = 4
 let paddleSpeedIncrease = 4
 let angle = Math.PI  // Starting rotation, normal
 let FirstDifficultyIncrease = 20
-let SecondDifficultyIncrease = 10
+let SecondDifficultyIncrease = 15
 let rotation = false
 // Second paddle definitions
 let SecondupPressed = false;  // check for user input w
