@@ -1,4 +1,4 @@
 # Breakout
-Spel skapat i en webbdesign kurs. Varierande svårigheter om man missar bollen. Inte menat att vara lätt.
+Litet svårt spel om Breakout, möjlighet för två spelare. Första spelaren kontrollerar sin paddel med wasd och andra med piltangenterna.
 
 Det går bra att testa spelet på: https://nilswickman.github.io./
