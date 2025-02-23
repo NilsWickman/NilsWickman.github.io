@@ -1,12 +1,89 @@
-* {
-  padding: 0;
-  margin: 0;
+body{
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-canvas {
-  background: black;
-  display: block;
-  margin: 0 auto;
-  margin-top: 100px;
-  border-style: solid;
-  border-color: black;
+#total_container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+h2{
+    width: 100%;
+    height: 100%;
+    margin-left: 37px;
+    color: white;
+    font-size: xx-large;
+}
+#left_container{
+    width: 10%;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3%;
+}
+#label_S{
+    margin-top: 48%;
+    font-size: large;
+    color: aliceblue;
+}
+.label{
+    margin-left: 10%;
+    font-size: small;
+    color: rgb(192, 192, 192);
+}
+#top_container{
+    display: flex;
+    column-gap: 750px;
+    width: 85%;
+}
+#right_container{
+    height: 100%;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    background-image: linear-gradient(rgb(82, 82, 82), rgb(41, 41, 41) 10%);
+}
+#matrix{
+    width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    column-gap: 60px;
+    justify-content: space-evenly;
+}
+.project{
+    width: 200px;
+    height: 300px;
+    border: solid;
+    border-color: transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.project_image{
+    width: 200px;
+    height: 200px;
+    background-image: url('images/placeholder.webp');
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.project_description{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    color: white;
 }

@@ -1,13 +1,64 @@
-<!doctype html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <title> Breakout </title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <canvas id="myCanvas" width="480" height="320"></canvas>
-  </body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+        <title>Nisses Bibliotek</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+        <!-- Don't use this in production: -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="total_container">
+        <div id="left_container">
+            <div id="label_H" class="label"> 
+                <a href="index.html"><i class="fas fa-home"></i> Startsida </a>
+            </div>
+            <div id="label_S" class="label"> Startsida </div>
+            <div id="label_0" class="label"> Webb Programmering </div>
+            <div id="label_1" class="label"> AI/Neurala Nätverk</div>
+            <div id="label_2" class="label"> SQL </div>
+            <div id="label_4" class="label"> Python</div>
+            <div id="label_5" class="label"> Data Analys</div>
+        </div>
+        <div id="right_container">
+        <div id="top_container">
+            <h2>Nisses Bibliotek</h2>
+            <h3>wickman.nils@gmail.com</h3>
+        </div>
+        
+        <div id="homepage"></div>
+        <script type="text/babel">
+    
+            function HomePage() {
+                const project_container = Array.from({ length: 15 }).map((_, index) => {
+                    return (
+                        <div class="project" key={index} >
+                            <div class="project_image" src="images/placeholder.webp" id={`project_image_${index}`}></div>
+                            <div class="project_description">Placeholder för framtida projekt</div>
+                        </div>
+                    );
+                });
+                return <div id="matrix">{project_container}</div>;
+            };
+      
+            const container = document.getElementById('homepage');
+            const root = ReactDOM.createRoot(container);
+            root.render(<HomePage />);
+      
+        </script>
+        </div>
+        </div>
+        <script type="text/babel">
+            function AddImage() {
+                for (let i =0; i < 15; i++) {
+                    var element = document.getElementById(index)
+            }}
+        </script>
+
+    </body>
 </html>
